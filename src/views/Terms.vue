@@ -20,7 +20,7 @@
       <section>
         <h2>2. Eligibility</h2>
         <p>
-          You must be at least 13 years old to use GraceTrail. If you are under 18, you must have
+          You must be at least 16 years old to use GraceTrail. If you are under 16, you must have
           permission from a parent or legal guardian. By using the App, you represent that you meet
           these requirements.
         </p>
