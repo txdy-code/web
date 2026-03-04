@@ -3,4 +3,13 @@ import './style.css'
 import App from './App.vue'
 import router from './router'
 
-createApp(App).use(router).mount('#app')
+console.log('main.js loaded')
+console.log('Vue:', createApp)
+console.log('App:', App)
+console.log('router:', router)
+
+const app = createApp(App)
+app.use(router)
+app.mount('#app')
+
+console.log('App mounted')
