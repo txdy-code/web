@@ -2,7 +2,6 @@
   <div class="legal-page">
     <div class="container">
       <div class="page-nav">
-        <router-link to="/" class="back-link">← Back to Home</router-link>
         <router-link to="/privacy" class="related-link">Privacy Policy →</router-link>
       </div>
 
@@ -205,14 +204,13 @@
 
 .page-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   margin-bottom: 2rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #e5e7eb;
 }
 
-.back-link,
 .related-link {
   color: var(--primary);
   text-decoration: none;
@@ -220,7 +218,6 @@
   transition: color 0.3s;
 }
 
-.back-link:hover,
 .related-link:hover {
   color: var(--primary-dark);
 }
