@@ -1,6 +1,11 @@
 <template>
   <div class="legal-page">
     <div class="container">
+      <div class="page-nav">
+        <router-link to="/" class="back-link">← Back to Home</router-link>
+        <router-link to="/privacy" class="related-link">Privacy Policy →</router-link>
+      </div>
+
       <h1>Terms of Service</h1>
       <p class="last-updated">Last Updated: March 4, 2026</p>
 
@@ -179,10 +184,6 @@
         <p>If you have questions about these Terms of Service, please contact us at:</p>
         <p><strong>Email: </strong><a href="mailto:olive_dove@outlook.com">olive_dove@outlook.com</a></p>
       </section>
-
-      <section class="related-links">
-        <p>Also see: <router-link to="/privacy" class="link">Privacy Policy</router-link></p>
-      </section>
     </div>
   </div>
 </template>
@@ -200,6 +201,28 @@
 .container {
   max-width: 800px;
   margin: 0 auto;
+}
+
+.page-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.back-link,
+.related-link {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.back-link:hover,
+.related-link:hover {
+  color: var(--primary-dark);
 }
 
 h1 {
@@ -250,24 +273,5 @@ li {
 
 strong {
   color: var(--text-dark);
-}
-
-.related-links {
-  margin-top: 3rem;
-  padding-top: 2rem;
-  border-top: 1px solid #e5e7eb;
-  text-align: center;
-}
-
-.link {
-  color: var(--primary);
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s;
-}
-
-.link:hover {
-  color: var(--primary-dark);
-  text-decoration: underline;
 }
 </style>
