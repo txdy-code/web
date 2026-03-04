@@ -179,6 +179,10 @@
         <p>If you have questions about these Terms of Service, please contact us at:</p>
         <p><strong>Email: </strong><a href="mailto:olive_dove@outlook.com">olive_dove@outlook.com</a></p>
       </section>
+
+      <section class="related-links">
+        <p>Also see: <router-link to="/privacy" class="link">Privacy Policy</router-link></p>
+      </section>
     </div>
   </div>
 </template>
@@ -246,5 +250,24 @@ li {
 
 strong {
   color: var(--text-dark);
+}
+
+.related-links {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.link {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
 }
 </style>
