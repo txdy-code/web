@@ -188,20 +188,35 @@
 </template>
 
 <script setup>
-import { ref, onMounted, watch } from 'vue'
+import { ref, onMounted, watch, onUnmounted } from 'vue'
 import { useRoute } from 'vue-router'
 
 const route = useRoute()
 const isDarkMode = ref(false)
 
+const updateBodyBackground = (dark) => {
+  if (dark) {
+    document.body.style.backgroundColor = '#1a1a1a'
+  } else {
+    document.body.style.backgroundColor = ''
+  }
+}
+
 onMounted(() => {
   // Check URL parameter for dark mode
   isDarkMode.value = route.query.dark === 'true'
+  updateBodyBackground(isDarkMode.value)
 })
 
 // Watch for route query changes
 watch(() => route.query.dark, (newValue) => {
   isDarkMode.value = newValue === 'true'
+  updateBodyBackground(isDarkMode.value)
+})
+
+onUnmounted(() => {
+  // Reset body background when leaving the page
+  document.body.style.backgroundColor = ''
 })
 </script>
 
