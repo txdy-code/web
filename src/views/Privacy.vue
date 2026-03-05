@@ -1,8 +1,8 @@
 <template>
-  <div class="legal-page">
+  <div class="legal-page" :class="{ 'dark-mode': isDarkMode }">
     <div class="container">
       <div class="page-nav">
-        <router-link to="/terms" class="related-link">Terms of Service →</router-link>
+        <router-link :to="{ path: '/terms', query: isDarkMode ? { dark: 'true' } : {} }" class="related-link">Terms of Service →</router-link>
       </div>
 
       <h1>Privacy Policy</h1>
@@ -130,6 +130,21 @@
 </template>
 
 <script setup>
+import { ref, onMounted, watch } from 'vue'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+const isDarkMode = ref(false)
+
+onMounted(() => {
+  // Check URL parameter for dark mode
+  isDarkMode.value = route.query.dark === 'true'
+})
+
+// Watch for route query changes
+watch(() => route.query.dark, (newValue) => {
+  isDarkMode.value = newValue === 'true'
+})
 </script>
 
 <style scoped>
@@ -212,5 +227,42 @@ li {
 
 strong {
   color: var(--text-dark);
+}
+
+/* Dark Mode Styles */
+.legal-page.dark-mode {
+  background: #1a1a1a;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode strong {
+  color: #ffffff;
+}
+
+.dark-mode p,
+.dark-mode li {
+  color: #b0b0b0;
+}
+
+.dark-mode .last-updated {
+  color: #808080;
+}
+
+.dark-mode .page-nav {
+  border-bottom-color: #333333;
+}
+
+.dark-mode .related-link {
+  color: #60a5fa;
+}
+
+.dark-mode .related-link:hover {
+  color: #93c5fd;
+}
+
+.dark-mode a {
+  color: #60a5fa;
 }
 </style>
