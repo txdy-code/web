@@ -8,28 +8,48 @@
 
       <div class="screenshots-grid">
         <div class="screenshot-item">
-          <img src="/doc/home.PNG" alt="Home Dashboard" />
+          <img src="/doc/img/home_1.png" alt="Home Dashboard" />
           <p class="screenshot-label">Home Dashboard</p>
         </div>
         <div class="screenshot-item">
-          <img src="/doc/theme.PNG" alt="Theme Settings" />
-          <p class="screenshot-label">Theme Settings</p>
+          <img src="/doc/img/home_2.png" alt="Home Feed" />
+          <p class="screenshot-label">Home Feed</p>
         </div>
         <div class="screenshot-item">
-          <img src="/doc/prayer.PNG" alt="Prayer Flow" />
-          <p class="screenshot-label">Prayer Flow</p>
-        </div>
-        <div class="screenshot-item">
-          <img src="/doc/bible.PNG" alt="Bible Study" />
+          <img src="/doc/img/bible.png" alt="Bible Study" />
           <p class="screenshot-label">Bible Study</p>
         </div>
         <div class="screenshot-item">
-          <img src="/doc/quiz.PNG" alt="Quiz Journey" />
+          <img src="/doc/img/parayer.png" alt="Prayer Flow" />
+          <p class="screenshot-label">Prayer Flow</p>
+        </div>
+        <div class="screenshot-item">
+          <img src="/doc/img/quiz_1.png" alt="Quiz Journey" />
           <p class="screenshot-label">Quiz Journey</p>
         </div>
         <div class="screenshot-item">
-          <img src="/doc/statistics.PNG" alt="Statistics" />
+          <img src="/doc/img/quiz_2.png" alt="Quiz Results" />
+          <p class="screenshot-label">Quiz Results</p>
+        </div>
+        <div class="screenshot-item">
+          <img src="/doc/img/mood.png" alt="Mood Tracker" />
+          <p class="screenshot-label">Mood Tracker</p>
+        </div>
+        <div class="screenshot-item">
+          <img src="/doc/img/record.png" alt="Daily Record" />
+          <p class="screenshot-label">Daily Record</p>
+        </div>
+        <div class="screenshot-item">
+          <img src="/doc/img/stat.png" alt="Statistics" />
           <p class="screenshot-label">Statistics</p>
+        </div>
+        <div class="screenshot-item">
+          <img src="/doc/img/theme.png" alt="Theme Settings" />
+          <p class="screenshot-label">Theme Settings</p>
+        </div>
+        <div class="screenshot-item">
+          <img src="/doc/img/language.png" alt="Language Settings" />
+          <p class="screenshot-label">Language Settings</p>
         </div>
       </div>
     </div>

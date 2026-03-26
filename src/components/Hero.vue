@@ -21,7 +21,7 @@
       </div>
       <div class="hero-image">
         <div class="phone-mockup">
-          <img src="/doc/home.PNG" alt="GraceTrail App" />
+          <img src="/doc/img/home_1.png" alt="GraceTrail App" />
         </div>
       </div>
     </div>
